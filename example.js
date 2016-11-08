@@ -1,8 +1,8 @@
 $(function () {
-    $("div[href]").click(function (event) {
+    $("button[href]").click(function (event) {
         window.protocolCheck($(this).attr("href"),
             function () {
-                alert("protocol not recognized");
+                window.location.href = "http://storageexplorer.com/";
             });
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
     });
